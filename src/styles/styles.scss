@@ -1,0 +1,82 @@
+@import './mixins.scss';
+
+// customs
+a {
+  text-decoration: none;
+}
+
+.ant-select.ant-select-single.ant-select-allow-clear.ant-select-show-arrow {
+  .ant-select-selector {
+    box-shadow: $box-shadow;
+    height: 2.5rem;
+    padding-top: 0.2rem;
+    outline: none;
+    border-color: $white !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $white !important;
+      box-shadow: $box-shadow;
+      outline: none;
+    }
+
+    span.anticon.anticon-down.ant-select-suffix svg {
+      margin-top: 0.5rem !important;
+    }
+  }
+}
+
+.ant-form.ant-form-horizontal {
+  height: 2.5rem;
+  outline: none;
+  border-color: $white !important;
+
+  .ant-input-affix-wrapper {
+    border-color: $white !important;
+    box-shadow: $box-shadow;
+    outline: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $white !important;
+      box-shadow: $box-shadow;
+      outline: none;
+    }
+  }
+}
+
+
+.map-modal {
+  .ant-modal-body {
+    .map-holer {
+      position: relative;
+      height: 15rem;
+    }
+  }
+}
+
+// preloader
+.x-loader {
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    color: $blue !important;
+  }
+}
+
+
+// pages
+
+//components
+@import '../components/homepage/header/header.scss';
+@import '../components/homepage/main/main.scss';
+@import '../components/homepage/main/profilecard.scss';

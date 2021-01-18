@@ -1,0 +1,52 @@
+.main {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  @include mobile() {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .title, .none-found {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .backtotop {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    background: $deepBlue;
+    color: $white;
+    text-align: center;
+    font-size: 14px,
+  }
+
+  .filters {
+    .input-search {
+      h4 {
+        font-weight: 700;
+        font-size: 15px;
+      }
+    }
+
+    .filter-by {
+      margin-top: 0.9rem;
+
+      h4 {
+        font-weight: 700;
+        font-size: 15px;
+      }
+
+      .ant-select {
+        width: 100%;
+      }
+    }
+  }
+
+  .profile-title {
+    @include mobile() {
+      margin-top: 1rem;
+    }
+  }
+}
